@@ -26,6 +26,7 @@ int main()
     char c2[10] = "eipi10";
     std::vector<char*> roster1{c1};
     std::list<char*> roster2{c2};
+    // compaare address not string
     std::cout << std::equal(roster1.cbegin(), roster1.cend(), roster2.cbegin());
     return 0;
 }

@@ -45,8 +45,9 @@ int main()
          << "Number of vowel e(E): \t" << eCnt << '\n'
          << "Number of vowel i(I): \t" << iCnt << '\n'
          << "Number of vowel o(O): \t" << oCnt << '\n'
-         << "Number of vowel u(U): \t" << uCnt << '\n' << "Number of space: \t"
-         << spaceCnt << '\n' << "Number of tab char: \t" << tabCnt << '\n'
+         << "Number of vowel u(U): \t" << uCnt << '\n'
+         << "Number of space: \t" << spaceCnt << '\n'
+         << "Number of tab char: \t" << tabCnt << '\n'
          << "Number of new line: \t" << newLineCnt << endl;
 
     return 0;

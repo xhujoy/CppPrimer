@@ -28,6 +28,7 @@ inline bool is_shorter(std::string const& lhs, std::string const& rhs)
 
 void elimdups(std::vector<std::string>& vs)
 {
+    // Both sort and std::sort are OK!
     std::sort(vs.begin(), vs.end());
     auto new_end = std::unique(vs.begin(), vs.end());
     vs.erase(new_end, vs.end());

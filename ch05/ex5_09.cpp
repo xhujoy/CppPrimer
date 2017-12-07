@@ -9,6 +9,7 @@ int main()
     unsigned aCnt = 0, eCnt = 0, iCnt = 0, oCnt = 0, uCnt = 0;
     char ch;
     while (cin >> ch) {
+        cout << ch << ' ';
         if (ch == 'a')
             ++aCnt;
         else if (ch == 'e')
@@ -20,6 +21,8 @@ int main()
         else if (ch == 'u')
             ++uCnt;
     }
+    cout << endl;
+
     cout << "Number of vowel a: \t" << aCnt << '\n' << "Number of vowel e: \t"
          << eCnt << '\n' << "Number of vowel i: \t" << iCnt << '\n'
          << "Number of vowel o: \t" << oCnt << '\n' << "Number of vowel u: \t"

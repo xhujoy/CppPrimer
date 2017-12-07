@@ -26,6 +26,8 @@ void ReadFileToVec(const string& fileName, vector<string>& vec)
     if (ifs) {
         string buf;
         while (std::getline(ifs, buf)) vec.push_back(buf);
+        std::cout << ifs.good() << ' ' << ifs.fail() << ' '
+            << ifs.eof() << ' ' << ifs.bad() << std::endl;
     }
 }
 

@@ -17,7 +17,13 @@ istream& func(istream& is)
 {
     std::string buf;
     while (is >> buf) std::cout << buf << std::endl;
+
+    std::cout << is.good() << ' ' << is.fail() << ' '
+        << is.eof() << ' ' << is.bad() << std::endl;
     is.clear();
+    std::cout << is.good() << ' ' << is.fail() << ' '
+        << is.eof() << ' ' << is.bad() << std::endl;
+
     return is;
 }
 

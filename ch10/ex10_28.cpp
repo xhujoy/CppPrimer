@@ -47,4 +47,6 @@ int main()
     list<int> lst3;
     copy(vec.cbegin(), vec.cend(), front_inserter(lst3));
     print(lst3);
+
+    return 0;
 }

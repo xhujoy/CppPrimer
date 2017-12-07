@@ -12,12 +12,15 @@
 #include <string>
 
 class Person {
-    std::string name;
-    std::string address;
+private:
+    std::string name = "x";
+    std::string address = "x";
 
 public:
-    const std::string& getName() const { return name; }
-    const std::string& getAddress() const { return address; }
+    // const std::string& getName() const { return name; }
+    // const std::string& getAddress() const { return address; }
+    std::string& getName() { return name; }
+    std::string& getAddress() { return address; }
 };
 
 #endif

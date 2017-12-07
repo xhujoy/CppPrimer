@@ -23,6 +23,7 @@ void Replace(string& s, const string& oldVal, const string& newVal)
                                std::distance(oldVal.begin(), oldVal.end());) {
         if (string{beg, beg + oldVal.size()} == oldVal) {
             beg = s.erase(beg, beg + oldVal.size());
+            // void string::insert(iter p, iter b, iter e)
             beg = s.insert(beg, newVal.cbegin(), newVal.cend());
             std::advance(beg, newVal.size());
         }
