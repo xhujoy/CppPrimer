@@ -65,5 +65,6 @@
         "xtr1common": "cpp",
         "xtree": "cpp",
         "xutility": "cpp"
-    }
+    },
+    "python.pythonPath": "/home/xhu/anaconda2/bin/python"
 }
