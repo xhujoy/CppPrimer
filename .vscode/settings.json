@@ -64,7 +64,9 @@
         "xstddef": "cpp",
         "xtr1common": "cpp",
         "xtree": "cpp",
-        "xutility": "cpp"
+        "xutility": "cpp",
+        "clocale": "cpp",
+        "*.tcc": "cpp"
     },
     "python.pythonPath": "/home/xhu/anaconda2/bin/python"
 }

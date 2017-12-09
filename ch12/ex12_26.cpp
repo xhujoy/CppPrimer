@@ -20,6 +20,7 @@ void input_reverse_output_string(int n)
     while (std::cin >> s && q != p + n) alloc.construct(q++, s);
 
     while (q != p) {
+        // --q, so the first is p+n-1 and the last is 0
         std::cout << *--q << " ";
         alloc.destroy(q);
     }
